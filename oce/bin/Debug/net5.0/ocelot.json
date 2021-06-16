@@ -1,0 +1,62 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/Order",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 49011
+
+        }
+      ],
+      "UpstreamPathTemplate": "/Order",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT" ]
+
+    },
+    {
+      "DownstreamPathTemplate": "/api/Order/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 49011
+
+        }
+      ],
+      "UpstreamPathTemplate": "/Order/{id}",
+      "UpstreamHttpMethod": [ "GET", "DELETE" ]
+
+    },
+    {
+      "DownstreamPathTemplate": "/api/Bookings",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 17740
+        }
+      ],
+      "UpstreamPathTemplate": "/Bookings",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT" ]
+
+    },
+    {
+      "DownstreamPathTemplate": "/api/Bookings/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 17740
+
+        }
+      ],
+      "UpstreamPathTemplate": "/Bookings/{id}",
+      "UpstreamHttpMethod": [ "GET", "DELETE" ]
+
+    }
+
+
+  ]
+
+}
